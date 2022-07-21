@@ -1,5 +1,5 @@
 export default {
-	getHelloWorld() {
-		return 'Hello World!';
-	},
+  getHelloWorld() {
+    return 'Hello World!';
+  },
 };

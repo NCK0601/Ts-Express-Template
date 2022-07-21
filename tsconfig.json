@@ -16,8 +16,5 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false
   },
-  "exclude": [
-    "node_modules*",
-    "public*"
-  ]
+  "exclude": ["node_modules*", "public*"]
 }
