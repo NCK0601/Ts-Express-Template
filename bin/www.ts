@@ -4,10 +4,12 @@
 import app from '../src';
 import http from 'http';
 import process from 'process';
-import defaultConfig from '../config/config.default';
-import prodConfig from '../config/config.prod';
+import getDefaultConfig from '../config/config.default';
+import getProdConfig from '../config/config.prod';
 import { doTasks } from '@nichengkai/express/typescript';
 
+const defaultConfig = getDefaultConfig();
+const prodConfig = getProdConfig();
 const serverConfig = defaultConfig.server;
 
 if (process.env.NODE_ENV === 'pro' && prodConfig.server.port)

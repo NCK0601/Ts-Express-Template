@@ -1,16 +1,11 @@
-import { ExpressConfig, TOKEN } from '@nichengkai/express/typescript';
+import { ExpressConfig } from '@nichengkai/express/config';
 
 export default () => {
   const config = <ExpressConfig>{};
 
   config.server = {
     port: 3300,
-    cross: [],
-  };
-
-  config.jwt = {
-    secretKey: TOKEN,
-    exclude: [/^\/api\//],
+    cors: ['localhost:8080'],
   };
 
   return config;

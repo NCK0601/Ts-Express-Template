@@ -1,11 +1,11 @@
-import { ExpressConfig } from '@nichengkai/express/typescript';
+import { ExpressConfig } from '@nichengkai/express/config';
 
 export default () => {
   const config = <ExpressConfig>{};
 
   config.server = {
     port: 3000,
-    cross: ['localhost:8080'],
+    cors: '*',
   };
 
   config.jwt = {
