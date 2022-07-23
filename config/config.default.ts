@@ -10,7 +10,7 @@ export default () => {
 
   config.jwt = {
     secretKey: '',
-    exclude: [/^\/api\//],
+    exclude: [/^\/api\//, /^\/account\//],
   };
 
   config.mysql = {
